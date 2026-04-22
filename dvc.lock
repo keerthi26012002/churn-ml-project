@@ -1,0 +1,18 @@
+schema: '2.0'
+stages:
+  train:
+    cmd: python pipeline.py
+    deps:
+    - path: Telecom Customer Churn.csv
+      hash: md5
+      md5: 0f9de68e012bd3aed5fa7cdc9fc421af
+      size: 977501
+    - path: pipeline.py
+      hash: md5
+      md5: f20931646d125d9ceb050de52576a318
+      size: 1754
+    outs:
+    - path: model.pkl
+      hash: md5
+      md5: 5270bf683d749d19cdc699fa67e05b9d
+      size: 57343
